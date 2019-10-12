@@ -1,0 +1,68 @@
+body 
+    background-color: white
+    padding: 0
+    margin: 0
+    font-size: 16px
+    color: #333
+    font-family: titilliumWeb-regular
+    font-size: 1rem 
+    header
+        background-color: white
+        z-index: 9
+        border-bottom: 1px solid lightgrey
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        align-items: center
+        padding: 0 15px
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        .property-info   
+            display: flex
+            align-items: center
+            padding: 10px 0
+            p
+                font-family: titilliumWeb-semiBold
+                font-size: 1rem 
+            > div 
+                border-radius: 50%
+                margin-left: 20px
+                img 
+                    max-width: 50px
+    main 
+        padding-top: 120px
+        .main-content
+            height: 100%
+            position: relative
+            &.centralise-content-box
+                display: flex 
+                justify-content:  center
+                flex-direction: column
+                align-items: center 
+        .title-content
+            text-align: center
+            max-width: 600px
+            width: 100%
+            margin-bottom: 20px
+            h1
+
+                font-family: titilliumWeb-semiBold
+                font-size: 1.5rem 
+                color: $color-darkblue
+            p 
+                font-family: titilliumWeb-regular
+                font-size: 1rem 
+                color: $color-grey
+        .privacy-link 
+            display: flex 
+            justify-content:  center
+            flex-direction: row
+            align-items: center
+            img
+                height: 15px
+            a 
+                padding-left: 10px
+                color: $color-grey
+                font-size: 1rem

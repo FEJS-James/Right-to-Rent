@@ -1,0 +1,65 @@
+.right-to-rent-options
+    display: flex 
+    justify-content:  center
+    flex-direction: row
+    flex-wrap: wrap
+    > div
+        width: 400px
+        margin: 15px
+        padding: 30px
+        border-radius: 4px 
+        display: flex
+        box-sizing: border-box
+        flex-direction: column
+        justify-content: space-between
+    #passport-selector
+        border: 1px solid lightgrey
+        p 
+            margin: 0 0 15px
+            color: $color-grey
+        p:first-of-type 
+            font-family: titilliumWeb-semiBold
+            color: $color-darkblue
+    #document-selector
+        box-shadow: 0 0 10px 3px rgba(0,0,0,0.1)
+        form 
+            p 
+                margin: 0 0 20px
+                font-family: titilliumWeb-semiBold
+                color: $color-darkblue
+            > div:last-of-type
+                margin-bottom: 30px
+            .option-group
+                margin-bottom: 15px
+                display: flex 
+                justify-content:  flex-start
+                flex-direction: row
+                align-items: center
+                label
+                    padding-left: 20px
+                    position: relative
+                    cursor: pointer
+                    &.active
+                        font-weight: 600
+                input[type=checkbox]
+                    height: 0
+                    width: 0
+                    opacity: 0
+                    visibility: hidden
+                    margin: 0
+                .option-circle
+                    margin-right: 10px 
+                    height: 12px
+                    width: 12px
+                    border-radius: 50%
+                    border: 1px solid lightgrey
+                    position: absolute
+                    &.active:before
+                        content: ''
+                        height:  8px
+                        width: 8px
+                        background-color: $color-orange 
+                        display: block
+                        margin: 2px
+                        border-radius: 50%
+

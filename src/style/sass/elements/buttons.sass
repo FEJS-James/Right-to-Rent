@@ -1,0 +1,48 @@
+button
+    &:hover
+        cursor: pointer
+    &.btn
+        padding: 15px
+        border-radius: 4px 
+        color: white
+        border: none
+        width: 100%
+        outline: none
+        font-size: 1rem
+        max-width: 350px
+        margin: 10px auto 
+        &.btn-orange
+            background-color: $color-orange
+        &.btn-teal
+            background-color: $color-teal
+    &.proceed-btn
+        margin-top: 20px
+
+    &.circle-btn
+        height: 50px
+        width: 50px
+        position: absolute
+        border-radius: 50%
+        background-color: white
+        top: 120px
+        border: 1px solid lightgrey
+        outline: none
+        z-index: 9
+        img  
+            max-width: 30%
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+        &.right-floating-btn
+            right: 50px
+            opacity: 0
+            transition: ease-in-out 200ms all
+        &.display_close
+            opacity: 1
+            transition: ease-in-out 320ms all
+            transition-delay: 1s
+            
+        &.left-floating-btn
+            left: 50px
+            top: 0

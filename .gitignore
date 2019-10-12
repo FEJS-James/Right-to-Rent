@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/ 
+
+# Mac folder structure
+.DS_Store
+
+# Webpack old
+Webpack.config.js
